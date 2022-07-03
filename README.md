@@ -58,11 +58,15 @@ Nous avons choisi ce jeu de données en relation avec l'Activité d'Eramet comme
 │   .gitignore
 │   README.md
 ├───code
+│   ├───app
 │   │
-│   └───scripts
-│           app.py
+│   └───tutorials
+│           display.py
+│           layouts.py
+│           widgets.py
+│
 └───data
     ├───input
-    │       dataset.csv    │
+    │       dataset.csv
     └───output
 ```
