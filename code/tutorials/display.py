@@ -74,10 +74,10 @@ st.write("### Cartes 🗼")
 map_data = pd.DataFrame(
     0.1 * np.random.randn(100, 2) + [48.856614, 2.3522219], columns=["lat", "lon"]
 )
+st.map(map_data)
 
 st.markdown("------")
 st.subheader("Images/vidéos/etc ...")
 
 st.image("https://static.streamlit.io/examples/cat.jpg")
 
-st.map(map_data)
