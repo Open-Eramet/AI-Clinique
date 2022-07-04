@@ -1,13 +1,19 @@
 # ERAMET AI Clinique
 
-### Commt prototyper et déployer des web applications Data/ML avec Steamlit ?
+### Comment prototyper et déployer des web appl Data/ML avec Streamlit ?
 
 --------
+### ⭐ Contexte
+
+La DataFoundry, unité Data Science au sein de la Direction de la [Transformation Numérique](https://www.eramet.com/fr/groupe/transformation-numerique) d'[Eramet](https://www.eramet.com/fr), propose un atelier pratique d'initiation à l'utilisation de [Streamlit](https://streamlit.io/)
+
+Le but est de s'initier au prototypage de web app au travers de cas pratiques simples et de créer un moment d'échange au sein de la communauté Data.
+
 
 ### 💻 Setup
 
-0 - S'assurer d'avoir Python et Conda comme gestionnaire d'environnements:
-Si ce n'est pas le cas, installer Python via Miniconda en suivant ces instructions: https://docs.conda.io/en/latest/miniconda.html en suivant les instructions selon votre OS.
+0 - S'assurer d'avoir installé Python et Conda (gestionnaire d'environnements virtuels).
+Si ce n'est pas le cas, installer Python via Miniconda en suivant ces instructions selon votre OS: https://docs.conda.io/en/latest/miniconda.html.
 
 1 - Lancer un terminal miniconda et exécuter les commandes suivantes
 
@@ -32,14 +38,14 @@ pip install -r requirements.txt
     - le package Python pynist en suivant les instructions dans ce Readme https://github.com/takluyver/pynsist
 
 ### 📉 Data
-Le jeu de donnée utilisé représente l'historique de cours de quelques métaux tels que l'Or, Aluminium, Argent, Nickel et Uranium. Ces données sont publiées sur Kaggle [Ici](https://www.kaggle.com/datasets/timmofeyy/-metals-price-changes-within-last-30-years) en Open Data.
+Le jeu de données utilisé représente l'historique des cours de marché de quelques métaux tels que l'or, l'aluminium, l'argent, le nickel et l'uranium. Ces données sont librement accessibles et publiées sur Kaggle [ici](https://www.kaggle.com/datasets/timmofeyy/-metals-price-changes-within-last-30-years) en Open Data.
 
-Nous avons choisi ce jeu de données en relation avec l'Activité d'Eramet comme un principal producteur  de Nickel dans le monde. Pour plus de détails/contexte voir [Lien](https://www.eramet.com/fr/activites/produits/nickel)
+Nous avons choisi ce jeu de données en relation avec les activités minières d'Eramet, un des principaux producteurs de nickel dans le monde. Pour plus de détails voir [Activité nickel](https://www.eramet.com/fr/activites/produits/nickel)
 
 
 ### Data description
 
-- __Year__: annee
+- __Year__: année
 - __Month__: mois
 - __Price_alum__: Prix Aluminium ($/Tonne)
 - __Price_gold__: Prix Or ($/Once Troy)
