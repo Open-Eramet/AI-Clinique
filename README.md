@@ -1,6 +1,6 @@
 # ERAMET AI Clinique
 
-### Comment prototyper et déployer des web appl Data/ML avec Streamlit ?
+### Comment prototyper et déployer des web app Data/ML avec Streamlit ?
 
 --------
 ### ⭐ Contexte
