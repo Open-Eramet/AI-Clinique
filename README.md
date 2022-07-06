@@ -57,16 +57,21 @@ Nous avons choisi ce jeu de données en relation avec l'Activité d'Eramet comme
 ```
 │   .gitignore
 │   README.md
+│   requirements.txt
+│
 ├───code
 │   ├───app
 │   │
 │   └───tutorials
 │           display.py
-│           layouts.py
+│           layout.py
 │           widgets.py
 │
-└───data
-    ├───input
-    │       dataset.csv
-    └───output
+├───data
+│   ├───input
+│   │       dataset.csv
+│   │
+│   └───output
+└───docs
+        Streamlit.xmind
 ```

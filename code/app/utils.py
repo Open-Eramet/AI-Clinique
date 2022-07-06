@@ -10,7 +10,14 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.dummy import DummyRegressor
 import numpy as np
+import plotly.express as px
 
+
+def display_timeseries(dataset):
+    fig = px.line(dataset, x= "date", y=dataset[SELECTED_FEATURES].columns)
+    fig.update_xaxes(rangeslider_visible=True)
+    fig.update_layout(xaxis_title="Date", yaxis_title="Prix ($)")
+    st.plotly_chart(fig, use_container_width=True)
 
 def add_date(row):
     """Add a date column"""
@@ -28,17 +35,9 @@ def preprocess(file_path):
     - Add date column (assume all dates are 1st day of month)
     - Sort by chronological order and index by date
     - Keep only inflation-corrected features
-    - to make 1M ahead predictions, shift data 1M into the past
     - Fill NULL with foreward filling and drop any remaining NULLs
     """
 
-    SELECTED_FEATURES = [
-        "Price_alum_infl",
-        "Price_gold_infl",
-        "Price_nickel_infl",
-        "Price_silver_infl",
-        "Price_uran_infl",
-    ]
 
     dataset = pd.read_csv(file_path, sep=";")
     dataset = dataset.dropna(subset=["Year", "Month"])
@@ -47,9 +46,9 @@ def preprocess(file_path):
         dataset.sort_values("date")
         .set_index("date")
         .loc[:, SELECTED_FEATURES]
-        .shift(periods=1)
         .fillna(method="ffill")
         .dropna()
+        .reset_index()
     )
     return dataset
 
@@ -63,13 +62,13 @@ def get_cv_score(dataset, pipeline, target):
 
     cv_score = cross_val_score(
         estimator=pipeline,
-        X=dataset.drop(target, axis=1),
-        y=dataset[target],
+        X=dataset.drop(target, axis=1).values,
+        y=dataset[target].values,
         scoring=make_scorer(rmse, greater_is_better=False),
         cv=TimeSeriesSplit(),
     )
 
-    return -np.array(cv_score)
+    return np.array(cv_score)
 
 
 pipelines = {
