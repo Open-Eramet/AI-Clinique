@@ -3,4 +3,5 @@
 __pycache__
 *.zip
 code/notebooks
-docs
+*.xmind
+docs/modop.png
