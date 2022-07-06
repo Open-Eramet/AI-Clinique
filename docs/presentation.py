@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.
+st.set_page_config(layout="wide", page_title="Presentation")
+
 with st.expander("Programme"):
 
     message = """
