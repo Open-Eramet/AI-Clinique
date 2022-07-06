@@ -8,3 +8,5 @@ SELECTED_FEATURES = [
     "Price_silver_infl",
     "Price_uran_infl",
 ]
+
+APP_NAME = "Predictive Ni"
