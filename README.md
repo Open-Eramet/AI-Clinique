@@ -66,14 +66,27 @@ Nous avons choisi ce jeu de données en relation avec les activités minières d
 │   requirements.txt
 │
 ├───code
-│   ├───app                     # Demo app à  développer ensemble
-│   │
-│   └───tutorials               # Tutoriels à faire ensemble
+│   ├───app
+│   │   │   config.py               # Demo app à  développer ensemble
+│   │   │   main.py
+│   │   │   utils.py
+│   └───tutorials                    # Tutoriels à faire ensemble
 │           display.py
 │           layout.py
 │           widgets.py
+│
 ├───data
 │   ├───input
 │   │       dataset.csv
+│   │
 │   └───output
+└───docs
+        logo.png
+        presentation.py
+        step_1.JPG                  # Exercices d'accompagnement Demo App
+        step_2.JPG
+        step_3.JPG
+        step_4.JPG
+        step_5.JPG
+        Streamlit.png
 ```

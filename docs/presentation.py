@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(layout="wide", page_title="Presentation")
-
+st.title("AI Clinique: Data/AI web apps avec Streamlit")
 with st.expander("Programme"):
 
     message = """
@@ -36,7 +36,7 @@ with st.expander("Introduction & Contexte Eramet"):
 with st.expander("Demo App/Motivations"):
 
     st.markdown("""
-    - [Gallerie de projets](https://streamlit.io/gallery)
+    - [Galerie de projets](https://streamlit.io/gallery)
     - __Suivi Lining Fours CMM__
     - __Streamlit Prophet__  [Site](https://share.streamlit.io/maximelutel/streamlit_prophet/main/streamlit_prophet/app/dashboard.py)
     
