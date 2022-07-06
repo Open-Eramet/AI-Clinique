@@ -60,18 +60,14 @@ Nous avons choisi ce jeu de données en relation avec l'Activité d'Eramet comme
 │   requirements.txt
 │
 ├───code
-│   ├───app
+│   ├───app                     # Demo app à  développer ensemble
 │   │
-│   └───tutorials
+│   └───tutorials               # Tutoriels à faire ensemble
 │           display.py
 │           layout.py
 │           widgets.py
-│
 ├───data
 │   ├───input
 │   │       dataset.csv
-│   │
 │   └───output
-└───docs
-        Streamlit.xmind
 ```
