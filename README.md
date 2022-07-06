@@ -66,17 +66,11 @@ Nous avons choisi ce jeu de données en relation avec les activités minières d
 │   requirements.txt
 │
 ├───code
-<<<<<<< HEAD
-│   ├───app                     # Demo app à  développer ensemble
-│   │
-│   └───tutorials               # Tutoriels à faire ensemble
-=======
 │   ├───app
 │   │   │   config.py               # Demo app à  développer ensemble
 │   │   │   main.py
 │   │   │   utils.py
 │   └───tutorials                    # Tutoriels à faire ensemble
->>>>>>> Solution
 │           display.py
 │           layout.py
 │           widgets.py
@@ -84,8 +78,6 @@ Nous avons choisi ce jeu de données en relation avec les activités minières d
 │   ├───input
 │   │       dataset.csv
 │   └───output
-<<<<<<< HEAD
-=======
 └───docs
         logo.png
         presentation.py
@@ -95,5 +87,4 @@ Nous avons choisi ce jeu de données en relation avec les activités minières d
         step_4.JPG
         step_5.JPG
         Streamlit.png
->>>>>>> Solution
 ```
